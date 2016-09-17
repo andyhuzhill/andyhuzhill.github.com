@@ -27,7 +27,7 @@ tags:
 
 Qt中并没有直接提供串口编程所需要的类库。不过你也可以直接调用所使用系统的API编程。以下是一个Linux系统下打开串口的示例函数：
 
-{% highlight cpp linenos %}
+{% highlight cpp  %}
     
     int TMainForm::openSerialPort()
     {
@@ -93,7 +93,7 @@ Lazarus是一个基于Free Pascal的类似于Delphi的RAD（Rapid Application De
 使用Lazarus写串口程序，也有好几种方式，首先是和Qt的第一种方式一样，直接调用系统提供的API函数。特别是Windows和WinCE平台上，有人专门为串口编程写了一个类。类文件的内容如下
 
     
-{% highlight pascal linenos %}
+{% highlight pascal  %}
 
     unit CE_Series;
     interface
@@ -192,7 +192,7 @@ Lazarus是一个基于Free Pascal的类似于Delphi的RAD（Rapid Application De
 这个类很简单，提供了四个函数，打开串口，读、写串口，关闭串口。将以上内容直接保存为一个名为ce_series.pas的文件，复制到你的代码的文件夹。
 使用示例如下：
 
-{% highlight pascal linenos %}
+{% highlight pascal  %}
     
     unit Unit1;
     {$mode objfpc}{$H+}
@@ -246,7 +246,7 @@ Lazarus是一个基于Free Pascal的类似于Delphi的RAD（Rapid Application De
 [![](http://andylinux-wordpress.stor.sinaapp.com/uploads/2012/07/Screenshot-4-1024x537.png)](http://andylinux-wordpress.stor.sinaapp.com/uploads/2012/07/Screenshot-4.png)
 程序示例如下
 
-{% highlight pascal linenos %}    
+{% highlight pascal  %}    
     
     procedure TForm1.Button1Click(Sender: TObject);
     var

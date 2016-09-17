@@ -41,7 +41,7 @@ $$x_1 = \frac{\sum_{i=1}^n (t_i - \bar t)(y_i - \bar y)}{\sum_{i=1}^n (t_i - \ba
 ###示例程序
  我用python根据以上算法写了一个简单的一次函数最小二乘法拟合的程序:
 
-{% highlight python linenos %}
+{% highlight python  %}
 #!/usr/bin/env python
 # *-* encoding: utf-8 *-*
 #
@@ -96,7 +96,7 @@ args  是指定func的其他参数
 
 下面用一个示例程序来解释他的用法,同样也是使用上面的求一次函数的拟合参数
 
-{% highlight python linenos %}
+{% highlight python  %}
 #!/usr/bin/env python
 # *-* encoding: utf-8 *-*
 #

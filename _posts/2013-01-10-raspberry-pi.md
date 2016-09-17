@@ -129,7 +129,7 @@ if后接的参数是你下载的树莓派的映像文件，of后面接你的SD�
 
 下面我写一个简单的webpy程序作为示范:
 
-{% highlight python linenos %}
+{% highlight python  %}
 
 #!/usr/bin/env python
 #  *-* coding: utf-8 *-*

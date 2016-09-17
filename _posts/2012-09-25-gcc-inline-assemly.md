@@ -29,7 +29,7 @@ GCC规定了一个内联汇编的语法，不同硬件平台上的GCC内联汇�
 
 下面以一个实例来说明这个语法：
  
- {% highlight c linenos %}
+ {% highlight c  %}
 
  void test(void)
  {
@@ -65,7 +65,7 @@ GCC规定了一个内联汇编的语法，不同硬件平台上的GCC内联汇�
 
 上面一个代码是将C语言的值传递到汇编代码中，也可以将汇编代码输出的结果传给C代码：
 
-    {% highlight c linenos %}
+    {% highlight c  %}
     void test(void)
     {
         int tmp;
