@@ -1,4 +1,5 @@
-{% comment %}<!--
+{% comment %}
+<!--
 The tags_list include is a listing helper for tags.
 Usage:
   1) assign the 'tags_list' variable to a valid array of tags.
@@ -15,7 +16,8 @@ Usage:
     site.tags is a Hash while page.tags is an array.
     
   This helper can be seen in use at: ../_layouts/default.html
--->{% endcomment %}
+-->
+{% endcomment %}
 
 {% if site.JB.tags_list.provider == "custom" %}
   {% include custom/tags_list %}
@@ -26,7 +28,14 @@ Usage:
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
-    	<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span>{{ tag[1].size }}</span></a></li>
+    	<li>
+            <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}-ref"
+               title="{{ tag[0] }}"
+               style="font-size: {{ tag[1].size | divided_by:5 | times:20 | plus:100 }}%;">
+            {{ tag[0] }} 
+            <span>{{ tag[1].size }}</span>
+            </a>
+        </li>
     {% endfor %}
   {% endif %}
 {% endif %}
