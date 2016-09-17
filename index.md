@@ -1,10 +1,8 @@
 ---
 layout: page
-title : 
+title : 文章列表
 ---
 {% include JB/setup %}
-
-# 文章列表
 
 <ul>
 {% for post in site.posts %}
