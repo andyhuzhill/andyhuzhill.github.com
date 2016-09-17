@@ -103,6 +103,11 @@ task :preview do
   system "jekyll serve -w"
 end # task :preview
 
+desc "Lauch preview environment with drafts"
+task :preview_draft do
+    system "jekyll serve -w --drafts"
+end # task :preview_draft
+
 # Public: Alias - Maintains backwards compatability for theme switching.
 task :switch_theme => "theme:switch"
 
