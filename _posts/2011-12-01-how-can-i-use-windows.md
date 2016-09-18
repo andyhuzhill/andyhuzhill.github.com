@@ -11,6 +11,9 @@ tags:
 ---
 
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 # 有什么办法可以用Windows?
 
 呵呵，最近父母说我的电脑怎么和别人不同啊！快落伍吧?  

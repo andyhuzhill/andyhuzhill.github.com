@@ -6,6 +6,9 @@ categories:
 tags: []
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 if you can see a equation 
 

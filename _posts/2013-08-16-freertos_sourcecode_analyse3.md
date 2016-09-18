@@ -7,6 +7,9 @@ tags:
 - FreeRTOS
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 现在来看FreeRTOS中最重要的一个东西，那就是任务管理。这是使用FreeRTOS的基础，也是
 理解基于FreeRTOS应用程序行为方式的基础。

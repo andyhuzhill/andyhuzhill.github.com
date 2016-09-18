@@ -6,6 +6,9 @@ category:
 tags: []
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 上次我的室友去参加了TI的一个技术研讨会，回来就和我说在皇冠假日酒店胡吃海喝了一顿，令人羡慕。这次，看到NI公司也搞了一个活动，果断也报名参加，我室友也想着再去吃一顿，不过最后还是有点失望，没有像上次那么吃到什么了。
 

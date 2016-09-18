@@ -7,6 +7,9 @@ categories:
 tags: []
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 首先，这个应该说不算一个小项目了。g-bios的移植，项目主页如下：
 

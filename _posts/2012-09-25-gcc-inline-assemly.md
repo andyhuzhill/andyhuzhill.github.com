@@ -10,6 +10,9 @@ tags:
 - GCC
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 在操作系统级的编程中，有时候，C语言并不能完全的使用硬件的功能，这时候就需要嵌入一些汇编代码来实现功能。
 有两种方式可以使C语言和assemly语言一起工作，一种是两种语言分开写成两个文件，链接的时候链接成一个文件;另一种就是在C语言中嵌入汇编代码。下面简单介绍一下如何在GCC中嵌入汇编代码。

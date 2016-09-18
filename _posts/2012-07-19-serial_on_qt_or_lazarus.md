@@ -16,6 +16,9 @@ tags:
 ---
 
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 最近几天，我室友在学习Gtk+，然后用Gtk+在 Linux下实现了一个串口调试助手,他的调试助手在这里有介绍[http://yeziquan.sinaapp.com/qrs/OS/APP/gui/gtk_serial.html用gtk写一个linux下的串口调试助手](http://yeziquan.sinaapp.com/qrs/OS/APP/gui/gtk_serial.html)。我也写一个姊妹篇。
 
 今天我就用几个GUI编程工具编写串口程序的方法，做一下介绍。至于串口是什么，以及串口编程的一些基本知识，就不是我这篇文章的重点了。

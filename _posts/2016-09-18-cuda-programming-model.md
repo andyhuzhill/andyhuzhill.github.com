@@ -7,6 +7,9 @@ tags: [cuda, parallel programming]
 ---
 {% include JB/setup %}
 
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 怎么样才能让代码在GPU上运行呢？ CUDA已经提供了一个很方便的编程环境，编程者只需要掌握了标准的C语言编程，再了解一下GPU编程的特点就可以写出能在GPU上运行的程序了，这里我用一个很简单的程序作为例子。
 
@@ -162,3 +165,5 @@ CUDA线程中可以寻址不同的内存空间，如下图所示。
 ### 参考文献
 
 [CUDA C Programming Guide](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#programming-model)
+
+

@@ -10,6 +10,14 @@ tags:
 ---
 
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+
 如果你是一个程序员,或者你就读计算机相关专业,那么你应该能理解下面这些诡异的小习惯是怎么养成的,或者你本身就有着其中的某些习惯:  
 
 0.程序员数数会从0开始数起.  

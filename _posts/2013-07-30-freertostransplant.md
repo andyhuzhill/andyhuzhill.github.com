@@ -8,6 +8,9 @@ tags:
 - OS
 ---
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 
 最近在看一个实时嵌入式操作系统————FreeRTOS, 为什么看它呢？首先它是开源的，其次它的内核最小只需要三个文件 `task.c、list.c、queue.c`，加起来5000多行代码还有很多注释在里面。他的优点网上也有很多介绍的，我也就不多说了，感兴趣的可以去百度google一下。
 

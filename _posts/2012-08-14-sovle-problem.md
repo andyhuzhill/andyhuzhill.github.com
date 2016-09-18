@@ -8,6 +8,9 @@ categories:
 ---
 
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 推荐一个练习程序的地方
 http://projecteuler.net
 注册一个帐号，就可以在上面使用任何你喜欢的语言解决网上的题目，只需要提交答案，不需要程序

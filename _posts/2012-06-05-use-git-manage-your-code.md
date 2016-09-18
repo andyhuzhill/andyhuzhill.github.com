@@ -11,6 +11,9 @@ tags:
 ---
 
 {% include JB/setup %}
+* TOC
+{:toc}
+<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
 Git 是 Linux Torvalds 为了帮助管理 Linux® 内核开发而开发的一个开放源码的版本控制软件。我们可以自己下载这个软件用于对内核的 hack 分析，或者用来管理自己的软件开发项目。本文将教你如何使用 Git 工具管理自己的程序代码 。
 
 目前比较流行的版本控制系统包括：
