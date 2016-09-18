@@ -2,12 +2,8 @@
 layout: post
 title: "飞思卡尔智能车比赛——帐目清单"
 description: ""
-categories: 
-- competetion
-- freescale 
 tags: 
-- 帐目公开
-- 飞思卡尔智能车
+- Freescale
 ---
 {% include JB/setup %}
 

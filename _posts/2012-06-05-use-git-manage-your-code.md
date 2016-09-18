@@ -7,8 +7,7 @@ categories:
 - Linux
 tags:
 - git
-- Linux
-- 代码管理
+- 版本控制
 ---
 
 {% include JB/setup %}

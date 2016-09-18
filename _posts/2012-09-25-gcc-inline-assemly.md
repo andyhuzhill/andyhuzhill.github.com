@@ -5,11 +5,9 @@ description: ""
 categories: 
 - ARM
 - GCC
-- ASM 
 tags:
 - ARM
 - GCC
-- ASM
 ---
 {% include JB/setup %}
 

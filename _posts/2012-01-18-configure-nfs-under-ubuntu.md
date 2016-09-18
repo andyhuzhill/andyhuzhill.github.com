@@ -7,7 +7,6 @@ categories:
 - Linux
 tags:
 - Linux
-- Ubuntu
 ---
 
 {% include JB/setup %}

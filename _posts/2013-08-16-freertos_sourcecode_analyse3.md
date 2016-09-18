@@ -5,7 +5,6 @@ description: ""
 category: FreeRTOS
 tags: 
 - FreeRTOS
-- 任务管理
 ---
 {% include JB/setup %}
 

@@ -4,9 +4,8 @@ title: "树莓派上搭建基于Python+web.py+fastcgi+lighttpd的网站"
 description: ""
 categories: web 
 tags: 
-- raspberry-pi
-- arm
-- website 
+- 树莓派
+- ARM
 ---
 {% include JB/setup %}
 

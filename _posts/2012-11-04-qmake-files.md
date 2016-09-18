@@ -3,9 +3,8 @@ layout: post
 title: "qmake 项目文件的写法"
 description: ""
 categories: 
-- Qt
 tags: 
-- qmake
+- Qt
 ---
 {% include JB/setup %}
 

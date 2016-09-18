@@ -10,8 +10,6 @@ categories:
 - ProgrammingonMCU
 tags:
 - MSP430
-- 定期器A
-- 时钟系统
 ---
 
 {% include JB/setup %}
