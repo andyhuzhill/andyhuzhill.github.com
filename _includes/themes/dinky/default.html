@@ -17,7 +17,7 @@
     <![endif]-->
     {% include JB/analytics %}
     <!-- Use Latex Syntax in HTML -->
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,7 +30,7 @@
           {% include JB/pages_list %}
         </ul>
 	    <!-- google search -->
-	    <form class="form-control" method=get action="https://www.google.com/search">
+	    <form class="form-control" method=get action="//www.google.com/search">
             <input type=text name=q><br/>
 	        <input type=submit name=btnG value="站内搜索">
 	        <input type=hidden name=ie value=utf-8>
@@ -54,7 +54,7 @@
             google_ad_height = {{ site.ads.google.height }};
             //-->
           </script>
-          <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+          <script type="text/javascript" src="//pagead2.googlesyndication.com/pagead/show_ads.js"></script>
         </div>
         {% endif %}
 
@@ -66,7 +66,7 @@
             <li class="contact"><address><span class="author fn n">{{ site.author.name }}</span> - <span class="fn email">{{ site.author.email }}</span></address></li>
             {% endif %}
             {% if site.author.github %}
-            <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
+            <li class="github"><a href="//github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
             {% endif %}
           </ul>
         </div><!-- misc -->
