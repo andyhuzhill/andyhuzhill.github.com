@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CUDA 编程模型"
-description: ""
+description: "介绍CUDA的编程模型(Intro to CUDA Programming Model)"
 category: "Parallel Programming"
 tags: [cuda, parallel programming]
 ---
