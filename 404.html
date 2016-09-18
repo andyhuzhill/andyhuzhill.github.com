@@ -26,3 +26,36 @@ header:
     <input type=hidden name=domains value="andyhuzhill.github.com">
     <input type=hidden name=sitesearch value="andyhuzhill.github.com">
 </form>
+
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="http://code.jquery.com/ui/1.8.18/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css">
+
+<input type="text"  id="search" size="30" placeholder="站内搜索" required />  
+
+<script>
+$(function() {
+      $.ajax({
+          url: "/search.xml",
+          dataType: "xml",
+          success: function( xmlResponse ) {
+             var data = $( "article", xmlResponse ).map(function() {
+                  return {
+                      value: $( "title", this ).text() + ", " +
+                          ( $.trim( $( "date", this ).text() ) ),
+                      desc: $("description", this).text(),
+                      url: $("url", this).text()
+                  };
+              }).get();
+
+              $( "#search" ).autocomplete({
+                  source: data,
+                  minLength: 0,
+                  select: function( event, ui ) {
+                    window.location.href = ui.item.url;
+                  }
+              });
+          }
+      });
+  });
+</script>
