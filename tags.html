@@ -10,7 +10,6 @@ group: navigation
 <script src="/assets/js/jquery.mousewheel.min.js"></script>
 <script src="/assets/js/jquery.tagsphere.min.js"></script>
 
-
 <style type="text/css">
   #tagcloud li a {
       text-decoration: none;
@@ -55,10 +54,10 @@ group: navigation
     {% include JB/pages_list %}
 </ul>
 
+{% endfor %}
+
 <script>
 $(function(){
     $('#tagcloud').tagcloud({centrex:250, centrey:250, init_motion_x:10, init_motion_y:10});
 });
 </script>
-
-{% endfor %}
