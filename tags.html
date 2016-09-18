@@ -20,6 +20,12 @@ group: navigation
   }
 </style>
 
+<script>
+$(function(){
+    $('#tagcloud').tagcloud({centrex:250, centrey:250, init_motion_x:10, init_motion_y:10});
+});
+</script>
+
 <div id="tagcloud" style="width:500px; height:500px; background-color:#fbfaf7;">
     <ul>
     {% if site.tags.first[0] == null %}
@@ -56,8 +62,3 @@ group: navigation
 
 {% endfor %}
 
-<script>
-$(function(){
-    $('#tagcloud').tagcloud({centrex:250, centrey:250, init_motion_x:10, init_motion_y:10});
-});
-</script>
