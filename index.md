@@ -1,8 +1,10 @@
 ---
 layout: page
-title : 全部文章
+title : Hu Zhenyu's Blog
 ---
 {% include JB/setup %}
+
+# 全部文章
 
 <ul>
 {% for post in site.posts %}
