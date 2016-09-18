@@ -27,31 +27,36 @@ header:
     <input type=hidden name=sitesearch value="andyhuzhill.github.com">
 </form>
 
+<script src="//lib.sinaapp.com/js/jquery/3.1.0/jquery-3.1.0.min.js"></script>
+<script src="//lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="//lib.sinaapp.com/js/jquery-ui/1.9.2/themes/ui-lightness/jquery-ui.css">
+<!--
 <script src="//code.jquery.com/jquery.js"></script>
 <script src="//code.jquery.com/ui/1.8.18/jquery-ui.js"></script>
 <link rel="stylesheet" href="//code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css">
+-->
 
 <div>
-    <input type="text"  id="search" size="30" placeholder="站内搜索" required />  
+    <input type="text" id="search" size="30" placeholder="站内搜索" required />  
     <script>
     $(function() {
           $.ajax({
               url: "/search.xml",
               dataType: "xml",
-              success: function( xmlResponse ) {
-                 var data = $( "article", xmlResponse ).map(function() {
+              success: function(xmlResponse) {
+                 var data = $("article", xmlResponse).map(function(){
                       return {
-                          value: $( "title", this ).text() + ", " +
-                              ( $.trim( $( "date", this ).text() ) ),
+                          value: $("title", this).text() + ", " +
+                              $.trim($("date", this).text()),
                           desc: $("description", this).text(),
                           url: $("url", this).text()
                       };
                   }).get();
     
-                  $( "#search" ).autocomplete({
+                  $("#search").autocomplete({
                       source: data,
                       minLength: 0,
-                      select: function( event, ui ) {
+                      select: function(event, ui) {
                         window.location.href = ui.item.url;
                       }
                   });
