@@ -17,7 +17,7 @@
     <![endif]-->
     {% include JB/analytics %}
     <!-- Use Latex Syntax in HTML -->
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -30,7 +30,7 @@
           {% include JB/pages_list %}
         </ul>
 	    <!-- google search -->
-	    <form class="form-control" method=get action="http://www.google.com/search">
+	    <form class="form-control" method=get action="https://www.google.com/search">
             <input type=text name=q><br/>
 	        <input type=submit name=btnG value="站内搜索">
 	        <input type=hidden name=ie value=utf-8>
@@ -42,8 +42,8 @@
 	    <!-- Page Counter -->
 	    访客计数:
 	    <div align="left">
-	        <a href="http://www.amazingcounters.com">
-	    	<img  border="0" src="http://cc.amazingcounters.com/counter.php?i=3154096&c=9462601" alt="net traffic statistics"></a><br>
+	        <a href="https://www.amazingcounters.com">
+	    	<img border="0" src="https://cc.amazingcounters.com/counter.php?i=3154096&c=9462601" alt="net traffic statistics"></a><br>
 	    </div>
         {% if site.ads.google %}
         <div class="misc ad">
@@ -67,21 +67,6 @@
             {% endif %}
             {% if site.author.github %}
             <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-            {% endif %}
-            {% if site.author.twitter %}
-            <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-            {% endif %}
-            {% if site.author.facebook %}
-            <li class="facebook"><a href="http://facebook.com/{{ site.author.facebook }}/" rel="me">facebook.com/{{ site.author.facebook }}</a></li>
-            {% endif %}
-            {% if site.author.flickr %}
-            <li class="flickr"><a href="http://flickr.com/{{ site.author.flickr }}/" rel="me">flickr.com/{{ site.author.flickr }}</a></li>
-            {% endif %}
-            {% if site.author.yelp %}
-            <li class="yelp"><a href="http://{{ site.author.yelp }}.yelp.com/" rel="me">{{ site.author.yelp }}.yelp.com</a></li>
-            {% endif %}
-            {% if site.author.pinterest %}
-            <li class="pinterest"><a href="http://pinterest.com/{{ site.author.pinterest }}" rel="me">pinterest.com/{{ site.author.pinterest }}</a></li>
             {% endif %}
           </ul>
         </div><!-- misc -->
