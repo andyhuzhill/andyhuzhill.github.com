@@ -5,10 +5,8 @@ header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
-
 <script src="/assets/js/jquery.mousewheel.min.js"></script>
 <script src="/assets/js/jquery.tagsphere.min.js"></script>
-
 <style type="text/css">
   #tagcloud li a {
       text-decoration: none;
@@ -18,13 +16,11 @@ group: navigation
       border: 3px solid #555;
   }
 </style>
-
 <script>
 $(function(){
     $('#tagcloud').tagcloud({centrex:250, centrey:250, init_motion_x:10, init_motion_y:10});
 });
 </script>
-
 <div id="tagcloud" style="width:500px; height:500px; background-color:#fbfaf7;">
     <ul>
     {% if site.tags.first[0] == null %}
@@ -44,13 +40,6 @@ $(function(){
     {% endif %}
     </ul>
 </div>
-
-<!--
-<ul>
-    {% assign tags_list = site.tags %}
-    {% include JB/tags_list %}
-</ul>
--->
 
 {% for tag in site.tags %} 
 <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
