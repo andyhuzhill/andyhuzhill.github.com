@@ -19,7 +19,9 @@
     {% include JB/analytics %}
     <!-- Use Latex Syntax in HTML -->
     <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    {% if page.url != "/tags" %}
     <script src="//lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>
+    {% endif %}
     <script src="//lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.min.js"></script>
     <meta name="baidu-site-verification" content="HtgLwp1qnB" />
   </head>
