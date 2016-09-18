@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "学习OpenCV"
-description: ""
+description: "OpenCV 简介"
 category: OpenCV 
 tags:
 - OpenCV

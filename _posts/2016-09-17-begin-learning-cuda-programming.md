@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "学习CUDA GPU并行编程"
-description: ""
+description: "CUDA 学习资料"
 category: "Parallel Programming"
 tags: [cuda, parallel programming]
 ---
