@@ -1,6 +1,6 @@
 ---
 layout: page
-title : 所有文章
+title : 全部文章
 ---
 {% include JB/setup %}
 
