@@ -10,7 +10,7 @@ group: navigation
 
 邮箱: 
 {% highlight bash %}
-    echo "YW5keWh1emhpbGxAZ21haWwuY29tCg==" | base64 -d
+echo "YW5keWh1emhpbGxAZ21haWwuY29tCg==" | base64 -d
 {% endhighlight %}
 
 <!--
