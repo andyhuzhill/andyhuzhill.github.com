@@ -4,9 +4,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="author" content="{{ site.author.name }}" />
-    <meta name="baidu-site-verification" content="HtgLwp1qnB" />
+    {% if page.description != nil %}
+    <meta content="{{page.description}}" />
+    {% endif %}
     <title>{{ page.title }}</title>
-
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/styles.css">
     <link rel="stylesheet" href="{{ ASSET_PATH }}/css/pygment_trac.css">
     <script src="{{ ASSET_PATH }}/js/scale.fix.js"></script>
@@ -14,7 +15,6 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     {% include JB/analytics %}
     <!-- Use Latex Syntax in HTML -->
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
@@ -29,25 +29,22 @@
           {% assign group = 'navigation' %}
           {% include JB/pages_list %}
         </ul>
-
-	<!-- google search -->
-	<form class="form-control" method=get action="http://www.google.com/search">
-        <input type=text name=q><br/>
-	    <input type=submit name=btnG value="站内搜索">
-	    <input type=hidden name=ie value=utf-8>
-	    <input type=hidden name=oe value=utf-8>
-	    <input type=hidden name=hl value=zh-CN>
-	    <input type=hidden name=domains value="andyhuzhill.github.com">
-	    <input type=hidden name=sitesearch value="andyhuzhill.github.com">
-	</form>
-
-	<!-- Page Counter -->
-	访客计数:
-	<div align="left">
-	    <a href="http://www.amazingcounters.com">
-		<img  border="0" src="http://cc.amazingcounters.com/counter.php?i=3154096&c=9462601" alt="net traffic statistics"></a><br>
-	</div>
-
+	    <!-- google search -->
+	    <form class="form-control" method=get action="http://www.google.com/search">
+            <input type=text name=q><br/>
+	        <input type=submit name=btnG value="站内搜索">
+	        <input type=hidden name=ie value=utf-8>
+	        <input type=hidden name=oe value=utf-8>
+	        <input type=hidden name=hl value=zh-CN>
+	        <input type=hidden name=domains value="andyhuzhill.github.com">
+	        <input type=hidden name=sitesearch value="andyhuzhill.github.com">
+	    </form>
+	    <!-- Page Counter -->
+	    访客计数:
+	    <div align="left">
+	        <a href="http://www.amazingcounters.com">
+	    	<img  border="0" src="http://cc.amazingcounters.com/counter.php?i=3154096&c=9462601" alt="net traffic statistics"></a><br>
+	    </div>
         {% if site.ads.google %}
         <div class="misc ad">
           <script type="text/javascript"><!--
@@ -90,17 +87,15 @@
         </div><!-- misc -->
         {% endif %}
       </header>
-
       <section>
       {{ content }}
       </section>
-
-        <!-- Baidu tongji code -->
-        <script type="text/javascript">
-            var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-            document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5b6f1df1bc88f75a0f4ef7146c7b03a2' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <!-- Baidu tongji code -->
+      <!-- Baidu tongji code -->
+      <script type="text/javascript">
+          var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+          document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F5b6f1df1bc88f75a0f4ef7146c7b03a2' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <!-- Baidu tongji code -->
     </div>
     <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
   </body>
