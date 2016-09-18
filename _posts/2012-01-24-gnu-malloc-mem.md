@@ -8,7 +8,6 @@ categories:
 - ProgramminginC
 tags:
 - C
-- Linux
 ---
 
 {% include JB/setup %}
@@ -22,5 +21,3 @@ tags:
 
 你必須明白，free會改變那些釋放掉的內存塊的內容。因而，你必須在調用free之前，從內存塊中提取出所有你想提取的東西。  
 
-
- 

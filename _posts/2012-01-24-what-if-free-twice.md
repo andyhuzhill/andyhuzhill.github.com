@@ -4,11 +4,9 @@ date: 2012-01-24 13:55:00
 layout: post
 title: Free一個動態指針兩次會怎樣？
 categories:
-- Linux
 - ProgramminginC
 tags:
 - C
-- Linux
 ---
 
 {% include JB/setup %}
