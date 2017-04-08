@@ -6,8 +6,7 @@ var gitment = new Gitment({
     repo: 'andyhuzhill.github.com',
     oauth: {
         client_id: 'ccd41f722687cd851040',
-        client_secret: 'a92ba03a46d941f61cbe8a329d321f51e54a929e',
-        redirect_uri: "https://andyhuzhill.github.io"
+        client_secret: 'a92ba03a46d941f61cbe8a329d321f51e54a929e'
     }
 })
 
