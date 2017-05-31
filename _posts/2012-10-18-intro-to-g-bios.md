@@ -11,7 +11,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 ## 概况
  g-bios 计划的目的是为Android和通用嵌入式Linux系统设计和开发一个通用体系bootloader/BIOS。它是由 Intel、IBM、Qualcomm、AMD 的几名资深软件工程师与开源社区共同研发的一个 Bootloader。    

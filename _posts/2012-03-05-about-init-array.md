@@ -12,7 +12,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
     21 int speed_arr[] = { B38400, B19200, B9600, B4800, B2400, B1200, B300,
 
     22  B38400, B19200, B9600, B4800, B2400, B1200, B300, };

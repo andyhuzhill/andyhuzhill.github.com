@@ -14,7 +14,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 # Qt – 一个跨平台应用程序和UI开发框架
 
 

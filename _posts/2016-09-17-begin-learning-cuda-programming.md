@@ -8,7 +8,7 @@ tags: [cuda, parallel programming]
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 
 [优达学城](http://www.youdaxue.com) 上开设了一门[并行编程入门](http://cn.udacity.com/course/intro-to-parallel-programming--cs344)的课程，使用的是Nvidia的CUDA并行编程环境。
