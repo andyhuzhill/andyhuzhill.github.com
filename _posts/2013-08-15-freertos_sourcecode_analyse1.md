@@ -6,7 +6,7 @@ category: FreeRTOS
 tags: 
 - FreeRTOS
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

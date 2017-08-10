@@ -13,7 +13,7 @@ tags:
 - 跨平台
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

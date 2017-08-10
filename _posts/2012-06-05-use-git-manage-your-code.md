@@ -10,7 +10,7 @@ tags:
 - 版本控制
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

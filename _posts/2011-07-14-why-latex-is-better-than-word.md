@@ -10,7 +10,7 @@ tags:
 - Linux
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

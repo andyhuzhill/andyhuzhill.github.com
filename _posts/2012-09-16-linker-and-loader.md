@@ -9,7 +9,7 @@ tags:
 - 读书
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

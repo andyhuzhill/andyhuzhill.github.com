@@ -11,7 +11,7 @@ tags:
 - GUI
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

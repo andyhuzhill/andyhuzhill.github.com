@@ -8,7 +8,7 @@ tags:
 - 机器视觉
 - 图像处理 
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

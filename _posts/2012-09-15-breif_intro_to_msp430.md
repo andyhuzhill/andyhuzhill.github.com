@@ -12,7 +12,7 @@ tags:
 - MSP430
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

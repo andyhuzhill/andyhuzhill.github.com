@@ -8,7 +8,7 @@ tags:
 -   bootloader
 -   g-bios
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

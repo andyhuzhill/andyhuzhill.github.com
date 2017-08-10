@@ -5,7 +5,7 @@ description: ""
 tags: 
 - Freescale
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

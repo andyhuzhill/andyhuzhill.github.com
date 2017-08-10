@@ -5,7 +5,7 @@ description: ""
 categories: 
 tags: []
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

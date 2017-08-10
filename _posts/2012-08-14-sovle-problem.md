@@ -7,7 +7,7 @@ categories:
 - programming
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

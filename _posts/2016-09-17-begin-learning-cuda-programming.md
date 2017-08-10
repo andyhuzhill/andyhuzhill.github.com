@@ -5,7 +5,7 @@ description: "CUDA 学习资料"
 category: "Parallel Programming"
 tags: [cuda, parallel programming]
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

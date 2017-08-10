@@ -9,7 +9,7 @@ tags:
 - python
 - SAE
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

@@ -11,7 +11,7 @@ tags:
 - Windows
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

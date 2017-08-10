@@ -7,7 +7,7 @@ tags:
 - 树莓派
 - ARM
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

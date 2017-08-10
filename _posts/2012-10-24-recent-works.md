@@ -6,7 +6,7 @@ categories:
 - Itsmylife
 tags: []
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

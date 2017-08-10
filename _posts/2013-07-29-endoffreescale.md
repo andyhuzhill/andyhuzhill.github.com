@@ -7,7 +7,7 @@ tags:
 - Freescale
 - K60 
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

@@ -1,7 +1,11 @@
 ---
-theme:
-  name: dinky
 layout: default
 ---
-{% include JB/setup %}
-{% include themes/dinky/page.html %}
+<div class="well">
+    {% if page.subtitle %}
+    <h4 class="home-subtitle">{{ page.subtitle }}</h4>
+    {% endif %}
+    <div>
+    	{{ content }}
+    </div>
+</div>

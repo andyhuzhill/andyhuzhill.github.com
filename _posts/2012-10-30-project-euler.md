@@ -6,7 +6,7 @@ categories:
 - programming
 tags: []
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

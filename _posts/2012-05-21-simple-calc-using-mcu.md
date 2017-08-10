@@ -14,7 +14,7 @@ tags:
 - 电子小制作
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

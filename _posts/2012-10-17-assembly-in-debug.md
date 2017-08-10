@@ -7,7 +7,7 @@ categories:
 tags: 
 -  debug
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

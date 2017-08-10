@@ -9,7 +9,7 @@ tags:
 - python
 - 最小二乘法
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

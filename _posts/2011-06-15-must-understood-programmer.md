@@ -9,7 +9,7 @@ tags:
 - 编程
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

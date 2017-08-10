@@ -9,7 +9,7 @@ tags:
 - 80c51
 - 小作品
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

@@ -6,7 +6,7 @@ categories:
 tags: 
 - Qt
 ---
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>

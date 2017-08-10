@@ -11,7 +11,7 @@ tags:
 - 指南
 ---
 
-{% include JB/setup %}
+
 * TOC
 {:toc}
 <hr/>
