@@ -31,7 +31,7 @@ author :
 #
 production_url : http://andyhuzhill.github.io
 
-plugins: ["jekyll-sitemap"]
+plugins_dir: ["jekyll-sitemap"]
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
