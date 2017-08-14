@@ -12,7 +12,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 ###   嵌入式开发中，如果使用NFS启动开发板上的系统，可以大大减少Flash的擦写次数，提高开发效率，本文就介绍了一下怎么在主机是Ubuntu系统的情况下配置NFS
 
 

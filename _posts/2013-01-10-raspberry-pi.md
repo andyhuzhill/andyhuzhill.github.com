@@ -10,7 +10,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 最近在网上淘了一个树莓派，什么是树莓派？这里是他的[官方网站](http://www.raspberrypi.org)你可以去看看。 简单的说就是一块使用了ARM11的CPU，具有256MB或512MB内存的具有两个USB接口，一个RJ45接口，HDMI输出和A/V输出的小开发板。他的特别之处就是所有全部东西都集成在一块银行卡大小的PCB上。官方价格只要$35。    
 

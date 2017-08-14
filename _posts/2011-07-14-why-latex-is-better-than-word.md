@@ -13,7 +13,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 LaTeX 与 Word   
 是两种不同类型的文本编辑处理系统，各有所长，如果要对文字编辑性能和使用便捷程度等作综合评比，Word 明显优于 LaTeX，仅“所见即所得”一项，Word   
 就会赢得绝大多数用户，但要仅限定在学术报告和科技论文方面，评比结果就不同了：

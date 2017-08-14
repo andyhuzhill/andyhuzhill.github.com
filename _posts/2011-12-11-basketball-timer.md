@@ -12,7 +12,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 这里，我把之前参加学校比赛的一个小作品放在网上，虽然有很多错误，不过，希望还是能对一些人有帮助吧.
 

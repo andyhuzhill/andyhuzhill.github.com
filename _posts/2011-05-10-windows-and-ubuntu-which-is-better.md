@@ -14,7 +14,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 ## 浅谈windows和ubuntu（windows和ubuntu到底哪个好）
 
 

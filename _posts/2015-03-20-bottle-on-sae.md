@@ -12,7 +12,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 
 最近在新浪云平台[SAE](http://sae.sina.com.cn)上做了一个网站，这次使用了[Bottle](http://www.bottlepy.org)这一个极其精简的Python 

@@ -9,7 +9,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 使用`Qt`编程的都知道，`Qt`中有一套不同于标准`C++`的语法,为了处理这些非标准的东西，就得通过`Qt`提供的一个工具——`qmake`。      
  `qmake`通过读取项目文件来生成一个`Makefile`，然后才能使用标准的`make`工具构建工程。    

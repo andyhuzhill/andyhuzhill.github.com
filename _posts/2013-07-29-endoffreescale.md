@@ -10,7 +10,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 
 其实早该写这篇blog了,因为比赛已经在23号的时候就结束了。从去年看到比赛规则出来，一时兴起，跑去和沈春阳说我也想做飞思卡尔这个比赛，到现在也算是大半年了，实际准备的时间可能也就两三个月。

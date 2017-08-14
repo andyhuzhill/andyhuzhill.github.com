@@ -17,7 +17,7 @@ tags:
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 [![](http://andylinux-wordpress.stor.sinaapp.com/uploads/2012/05/calc.jpg-300x205.png)](http://andylinux-wordpress.stor.sinaapp.com/uploads/2012/05/calc.jpg.png)
 这几天，学院举办的那个电子设计比赛，我们学院的同学太不给力啦，才出了四个作品。被科技部的同学找到说要我们无论如何要把之前报的作品作出来，最好还能多做几个作品，于是我花了两天时间做了一个简单的计算器，实现了一些简单的加减乘除，本来还想做正弦函数，余弦函数的计算的，但是有点麻烦，就木有弄了。
 首先，是画电路图，原理还是挺简单的，就是单片机接上键盘，接上显示器，然后读取键盘，显示计算结果就是了。原理图在上面已经有了，[这里](http://andylinux.sinaapp.com/html/ylt.pdf)也有一份PDF格式的原理图大图。画图软件是Linux系统下的KiCAD，感觉使用起来还是挺好用的。

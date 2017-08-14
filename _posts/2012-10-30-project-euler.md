@@ -9,7 +9,7 @@ tags: []
 {% include JB/setup %}
 * TOC
 {:toc}
-<div style="border-bottom: 1px solid #ccc;line-height: 1.3em;"></div>
+<hr/>
 
 网上有一个著名的"具有挑战性的不仅仅需要具备数学能力的‘数学/计算机编程’问题集合"--`Project Euler` ，他的网站是[http://projecteuler.net](http://projecteuler.net)， 这个网站 我在之前的 `blog`中也曾提到过。今天，我要将我目前为止做出的几道题目列出来：    
   `Project Euler`是个很有意思的地方，你可以使用任何方法解决上面的问题，你甚至可以直接通过搜索引擎获得答案，不过，那样就没意思啦。
