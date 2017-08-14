@@ -12,9 +12,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 我最近写了一些关于关于Linux入门的东西，写了一部分，现在放在网上，欢迎提供宝贵意见，可以在本页留言。
 共有两个版本
 [PDF文件]({{baseurl}}/html/linux_guide.pdf)

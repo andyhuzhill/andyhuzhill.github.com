@@ -13,9 +13,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 简单介绍了一下MSP430单片机的时钟系统 PIO口 还有定时器A
 详见如下链接的演示文稿（PDF格式）
 [MSP430单片机简介](http://andylinux.sinaapp.com/html/MSP430/msp430.pdf)

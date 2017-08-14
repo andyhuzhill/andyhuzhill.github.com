@@ -6,9 +6,9 @@ categories:
 tags: []
 ---
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 
 if you can see a equation 
 

@@ -9,9 +9,9 @@ tags:
 -   g-bios
 ---
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 
 
 # g-bios 阅读笔记

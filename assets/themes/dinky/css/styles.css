@@ -234,7 +234,6 @@ h1.header {
     margin-top: 0;
 }
 
-
 h1.header, a.header, a.name, header a{
     color: #fff;
 }
@@ -324,6 +323,15 @@ footer {
     padding-left: 50px;
 }
 
+.toc-nav {
+    float: right;
+    right: 10%;
+    top: 40px;
+    position: fixed;
+
+    border: 1px solid #000;
+}
+
 @media print, screen and (max-width: 960px) {
 
     div.wrapper {
@@ -361,6 +369,12 @@ footer {
         right:130px;
         top:84px;
     }
+
+    .toc-nav {
+        float: none;
+        position: static;
+        padding: 20px 84px 0px 50px;
+    }
 }
 
 @media print, screen and (max-width: 720px) {
@@ -385,6 +399,13 @@ footer {
     header ul, header p.view {
         position:static;
     }
+
+    .toc-nav {
+        float: none;
+        right: 0;
+        position: static;
+        padding: 20px 84px 0px 50px;
+    }
 }
 
 @media print, screen and (max-width: 480px) {
@@ -401,6 +422,12 @@ footer {
         display:block;
     }
 
+    .toc-nav {
+        float: none;
+        right: 0;
+        position: static;
+        padding: 20px 84px 0px 50px;
+    }
 }
 
 @media print {

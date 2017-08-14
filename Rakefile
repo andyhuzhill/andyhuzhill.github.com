@@ -71,8 +71,6 @@ task :post do
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts ""
-    post.puts "* TOC "
-    post.puts "{:toc}"
   end
 end # task :post
 

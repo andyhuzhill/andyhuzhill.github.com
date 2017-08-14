@@ -12,9 +12,8 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
 ## 浅谈windows和ubuntu（windows和ubuntu到底哪个好）
 
 

@@ -12,9 +12,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 # Qt – 一个跨平台应用程序和UI开发框架
 
 

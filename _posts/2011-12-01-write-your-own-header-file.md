@@ -11,9 +11,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 每个学习C语言的人 肯定都知道程序的第一行要写上一个 
 
     #include <stdio.h> 

@@ -7,9 +7,9 @@ tags:
 - FreeRTOS
 ---
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 
 从这一篇开始，我就一点一点的把我在读FreeRTOS源代码中遇到的东西记录下来。
 

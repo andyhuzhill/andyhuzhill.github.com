@@ -7,9 +7,9 @@ tags:
 - FreeRTOS
 ---
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 
 FreeRTOS里面实现了一个链表用来存储任务信息，这个链表也可以被用户程序使用。
 

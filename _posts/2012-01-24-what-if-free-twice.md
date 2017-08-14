@@ -10,9 +10,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 教科書上說 兩次釋放相同的指針會導致“不確定的行爲”，那麼 我就試一試寫了下面一個簡單代碼
 
     #include <stdio.h>

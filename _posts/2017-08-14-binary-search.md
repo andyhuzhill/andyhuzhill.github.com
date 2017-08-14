@@ -7,8 +7,8 @@ tags: [algorithm]
 ---
 {% include JB/setup %}
 
-* TOC 
-{:toc}
+ 
+
 
 
 二分法查找是一种在有序的序列中查找元素的有效方法。

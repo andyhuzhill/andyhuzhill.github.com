@@ -17,14 +17,15 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     {% include JB/analytics %}
-    <!-- Use Latex Syntax in HTML -->
+    <!-- Use Latex Syntax in SVG -->
     <script type="text/javascript"
 src="//cdn.bootcss.com/mathjax/2.7.2-beta.1/MathJax.js?config=TeX-AMS-MML_SVG"></script>
     <script src="//lib.sinaapp.com/js/jquery/2.2.4/jquery-2.2.4.min.js"></script>
     <script src="//lib.sinaapp.com/js/jquery-ui/1.9.2/jquery-ui.min.js"></script>
+    <script src="/assets/js/toc.js"></script>
     <meta name="baidu-site-verification" content="HtgLwp1qnB" />
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".toc" data-offset="20">
     <div class="wrapper">
       <header>
         <h1 class="header"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
@@ -64,6 +65,7 @@ src="//cdn.bootcss.com/mathjax/2.7.2-beta.1/MathJax.js?config=TeX-AMS-MML_SVG"><
         </div><!-- misc -->
         {% endif %}
       </header>
+      <div id="toc" class="toc toc-nav"></div>
       <section>
       {{ content }}
       </section>

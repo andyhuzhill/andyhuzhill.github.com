@@ -12,9 +12,9 @@ tags:
 ---
 
 {% include JB/setup %}
-* TOC
-{:toc}
-<hr/>
+
+
+
 #  本文已移往以下链接
 
 
