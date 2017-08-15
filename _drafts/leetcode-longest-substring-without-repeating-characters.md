@@ -20,6 +20,6 @@ Given "bbbbb", the answer is "b", with the length of 1.
 Given "pwwkew", the answer is "wke", with the length of 3. Note that the answer must be a **substring**, "pwke" is a subsequence and not a substring.
 
 *翻译:*
-  
+  给出一个字符串，找出字符串中最长的无重复子串的长度。
 
 ## 解答
