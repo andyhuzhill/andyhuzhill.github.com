@@ -51,7 +51,6 @@ $$x_1 = \frac{\sum_{i=1}^n (t_i - \bar t)(y_i - \bar y)}{\sum_{i=1}^n (t_i - \ba
 # =============================================
 #      Author   : Andy Scout
 #    Homepage   : http://andyhuzhill.github.com
-#    E-mail     : andyhuzhill@gmail.com
 #
 #  Description  :
 #  Revision     :
@@ -106,7 +105,6 @@ args  是指定func的其他参数
 # =============================================
 #      Author   : Andy Scout
 #    Homepage   : http://andyhuzhill.github.com
-#    E-mail     : andyhuzhill@gmail.com
 #
 #  Description  :
 #  Revision     :

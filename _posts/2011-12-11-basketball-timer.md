@@ -84,8 +84,8 @@ extern void pause();
 *        Created:  27.11.2011 11:52:13
 *       Revision:  none
 *       Compiler:  sdcc 3.0.0
-*         Author:  andyhuzhill, andyhuzhill@gmail.com
-*        Company:  http://www.andylinux.co.cc
+*         Author:  andyhuzhill 
+*       HomePage:  http://andyhuzhill.github.io
 * ===================================================================== */
 #include <8052.h>
 #include "main.h"
