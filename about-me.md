@@ -10,7 +10,13 @@ group: navigation
 
 邮箱: 
 {% highlight bash %}
+#ifdef __APPLE__
+echo "YW5keWh1emhpbGxAZ21haWwuY29tCg==" | base64 -D
+#elif __linux__ 
 echo "YW5keWh1emhpbGxAZ21haWwuY29tCg==" | base64 -d
+#elif _WIN32
+echo YW5keWh1emhpbGxAZ21haWwuY29tCg== > temp.txt && certutil -decode temp.txt result.txt | type result.txt && del temp.txt result.txt
+#endif
 {% endhighlight %}
 
 <!--
