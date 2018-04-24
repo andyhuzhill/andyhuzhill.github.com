@@ -282,7 +282,6 @@ sys.setdefaultencoding('utf-8')
 appid = ''
 secretKey = ''
 
-httpClient = None
 myurl = '/api/trans/vip/translate'
 
 def translate(string, targetLanguage):
@@ -307,10 +306,7 @@ def translate(string, targetLanguage):
             return objResponse["trans_result"][0]["dst"]
     except Exception, e:
         print e
-    finally:
-        if httpClient:
-            httpClient.close()
-    
+   
     return string
 
 
