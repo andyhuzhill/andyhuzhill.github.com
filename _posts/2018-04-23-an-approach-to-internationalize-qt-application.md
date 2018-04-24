@@ -259,9 +259,6 @@ private bool convertExcelFile2QtFile(string excelFileName, string qtFileName)
 其实了解了 TS 文件的结构之后，我们还能做一件事，那就是直接调用网上的翻译接口，自动将所有的词条翻译成对应的语言，下面就是一个简单的例子。
 
 {% highlight python %}
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
-
 import xml.etree.ElementTree as ET
 import os
 
@@ -270,10 +267,16 @@ import md5
 import urllib
 import random
 import json
+import threading
 
 import requests
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
 
-import threading
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
 
 ## 下面填写你自己的百度翻译 API 的 appid 和 secretKey
 appid = ''
