@@ -73,7 +73,7 @@ lrelease English.ts
 
 ### Qt TS 文件格式分析
 
-Qt 的 TS 翻译文件实际是一个 XML 文件。我们先来看一个翻译文件的例子。
+Qt 的 TS 翻译文件其实就是一个 XML 文件。我们先来看一个翻译文件的例子。
 
 {% highlight xml %}
 <!DOCTYPE TS>
