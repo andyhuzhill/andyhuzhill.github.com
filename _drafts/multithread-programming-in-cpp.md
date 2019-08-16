@@ -60,7 +60,7 @@ int pthread_create(pthread_t *thread, const pthread_attr_t *attr,
 ```
 使用 [pthread_create](http://man.he.net/?topic=pthread_create&section=all) 创建一个线程，其中 start_routine 就是要在新线程中执行的函数，arg 是传递给这个函数的参数。详细的说明可以通过 [`man pthread_create`](http://man.he.net/?topic=pthread_create&section=all) 命令查看。
 
-C++11 thread
+C++11 std::thread
 
 ```cpp
 #include <thread>
@@ -157,14 +157,99 @@ void MyObject::startWorkInAThread()
 
 
 * 等待线程结束
+	
+使用上面的API创建线程之后，程序就会自动提交给线程库去调度执行了，但是我们是不知道程序具体是什么时候开始执行，也不知道线程什么时候结束的。这时我们就可以使用下面的函数来等待线程执行结束。
 
-  pthread_join  thread::join  QThread::wait
+POSIX Thread
+   
+```c
+#include <pthread.h>
+
+int pthread_join(pthread_t thread, void **retval);
+```
+C++11 std::thread
+
+[std::thread::join](https://en.cppreference.com/w/cpp/thread/thread/join)
+
+```cpp
+void join();
+```
+
+Qt QThread
+
+[QThread::wait](https://doc.qt.io/qt-5/qthread.html#wait)
+
+```cpp
+bool QThread::wait(unsigned long time = ULONG_MAX);
+```
+   QThread 还可以通过 [QThread::finished()](https://doc.qt.io/qt-5/qthread.html#finished) 信号知道线程执行结束。
 
 * 分离线程
 
-  pthread_detach  thread::detach  
+  如果我们不需要等待线程结束，启动一个线程之后，就让它在后台一直运行，那么我们可以使用 detach 函数。
+
+POSIX Thread
+
+```c
+#include <pthread.h>
+
+int pthread_detach(pthread_t thread);
+```
+
+C++11 std::thread
+
+[std::thread::detach](https://en.cppreference.com/w/cpp/thread/thread/detach)
+
+```cpp
+#include <thread>
+void detach();
+```
+
 
 ## 线程同步机制
+
+上面介绍了如何创建线程，以及如何等待线程结束或者是让线程在后台运行。接下来，介绍一下线程同步的机制。我们先来看一个问题，如果没有线程同步会发生什么呢？
+
+```cpp
+#include <thread>
+#include <iostream>
+using namespace std;
+
+int global = 0;
+
+void func1()
+{
+    for ( int i = 0; i < 1000; ++i ) {
+        global += 1;
+    }
+}
+
+void func2()
+{
+    for ( int i = 0; i < 1000; ++i ) {
+        global -= 1;
+    }
+}
+
+int main(int argc, char *argv[])
+{
+    thread t1(func1);
+    thread t2(func2);
+
+    t2.join();
+    t1.join();
+
+    cout << " global = " << global << endl;
+    return 0;
+}
+```
+
+使用如下命令编译
+```bash
+g++ -std=c++11 -o test test.cpp -lpthread
+```
+执行多次程序，你会发现每次程序输出的结果都不太一样，并不如我们所预想的那样每次都输出0. 为什么呢，我们要知道，我们启动的两个线程是同时运行的，
+
 
 * mutex
 
@@ -173,7 +258,15 @@ void MyObject::startWorkInAThread()
  多线程编程中遇到的问题基本上可以分为以下几种类型:
  
  1. 死锁 (dead-lock)
-    死锁
+
+    线程A要依次获取 mutex1 和 mutex2 去执行下一步操作，而线程B需要依次获取 mutex2 和 mutex1 去执行下一步操作。线程A获取了 mutex1， 线程B获取了 mutex2, 双方都要去获取对方已经 lock 的 mutex时，就会发生死锁。
+
+	还有一种情况就是在同一个线程中，重复去 lock 已经 lock 的 mutex，这时也会发生死锁。（这里的mutex都是非递归mutex)
+
+	要避免死锁的话，就是获取多个锁的时候，总是使用同一个顺序去访问，就能避免了。
+
+	C++11 提供了一个 [std::lock](https://en.cppreference.com/w/cpp/thread/lock) 函数，用于同时获取多个锁时，避免死锁，你可以点击 [std::lock](https://en.cppreference.com/w/cpp/thread/lock) 链接去了解具体的使用方法。
+
 
  2. 竞态条件 (race-condition)
 
