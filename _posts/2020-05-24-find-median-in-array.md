@@ -9,7 +9,7 @@ tags: []
 
 ## 问题定义：
 
-在`O(n)`时间内，在一个长度为n的数组Ｘ中找到x,使得恰有\floor \frac{n}{2} \rfloor 个元素小于x.
+在`O(n)`时间内，在一个长度为n的数组Ｘ中找到x,使得恰有 $$\lfloor \frac{n}{2} \rfloor $$ 个元素小于x.
 
 问题可以更一般化为”选取第ｉ大的元素“问题
 
@@ -31,11 +31,11 @@ tags: []
 Input: 数组A[1:n], 1 i n
 Output: A[1:n]中的第i-大的数
 
- 1. for j1 to n/5
+ 1. for j <- 1 to n/5
  2. InsertSort(A[(j-1)*5+1 : (j-1)*5+5]);
  3. swap(A[j], A[[(j-1)*5+3]);
- 4. x Select(A[1: n/5], n/10 );
- 5. k partition(A[1:n], x);
+ 4. x <- Select(A[1: n/5], n/10 );
+ 5. k <- partition(A[1:n], x);
  6. if k=i then return x;
  7. else if k>i then retrun Select(A[1:k-1],i);
  8. else retrun Select(A[k+1:n],i-k);
